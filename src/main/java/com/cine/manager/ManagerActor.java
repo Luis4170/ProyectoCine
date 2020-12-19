@@ -6,13 +6,16 @@
 package com.cine.manager;
 
 import com.cine.DAO.ManagerDAOCine;
+import com.cine.entidades.Actor;
 
 /**
  *
  * @author luisr
  */
-public class ManagerAutor {
+public class ManagerActor {
     ManagerDAOCine managerDAOCine = new ManagerDAOCine();
-    
-    
+    public void insertarAutor( Actor objActor ) throws Exception
+    {
+        managerDAOCine.insertar(objActor);
+    }
 }
